@@ -1,0 +1,123 @@
+##############################################################
+##############################################################
+# This is an example configuration provided by Wraith.
+# Feel free to amend for your own requirements.
+# ---
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# `wraith capture capture.yaml`
+#
+##############################################################
+##############################################################
+
+# (required) The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+# (required) The domains to take screenshots of.
+domains:
+  current:  "https://testint.disasterassistance.gov/"
+  new:      "https://staging.disasterassistance.gov/"
+
+# (required) The paths to capture. All paths should exist for both of the domains specified above.
+paths:
+  
+  home: /?mobile=unL9HuS
+  EShome: /es/?mobile=unL9HuS
+
+  get-assistance: /get-assistance/?mobile=unL9HuS
+  address-lookup: /address-lookup/?mobile=unL9HuS
+  find-assistance: /get-assistance/find-assistance/?mobile=unL9HuS
+  assistance-by-category: /get-assistance/assistance-by-category/?mobile=unL9HuS
+  assistance-by-federal-agency: /get-assistance/assistance-by-federal-agency/?mobile=unL9HuS
+  community-leaders: /get-assistance/community-leaders/?mobile=unL9HuS
+  other-recovery-help: /get-assistance/other-recovery-help/?mobile=unL9HuS
+  application-checklist: /get-assistance/application-checklist/?mobile=unL9HuS
+  forms: /get-assistance/forms/?mobile=unL9HuS
+
+  ESget-assistance: /es/obtener-asistencia/?mobile=unL9HuS
+  ESaddress-lookup: /es/buscador-de-direcciones/?mobile=unL9HuS
+  ESfind-assistance: /es/obtener-asistencia/encuentre-asistencia/?mobile=unL9HuS
+  ESassistance-by-category: /es/obtener-asistencia/asistencia-por-egoría/?mobile=unL9HuS
+  ESassistance-by-federal-agency: /es/obtener-asistencia/asistencia-por-agencia-federal/?mobile=unL9HuS
+  EScommunity-leaders: /es/obtener-asistencia/líderes-comunitarios/?mobile=unL9HuS
+  ESother-recovery-help: /es/obtener-asistencia/otra-ayuda-para-recuperación/?mobile=unL9HuS
+  ESapplication-checklist: /es/obtener-asistencia/lista-de-verificación-para-aplicarse/?mobile=unL9HuS
+  ESforms: /es/obtener-asistencia/formularios/?mobile=unL9HuS
+
+  information: /information/?mobile=unL9HuS
+  news-feeds: /information/news-feeds/?mobile=unL9HuS
+  immediate-needs: /information/immediate-needs/?mobile=unL9HuS
+  moving-forward: /information/moving-forward/?mobile=unL9HuS
+  disabilities: /information/disabilities-access-and-functional-needs/?mobile=unL9HuS
+  older-americans: /information/older-americans/?mobile=unL9HuS
+  children-and-families: /information/children-and-families/?mobile=unL9HuS
+  disaster-types: /information/disaster-types/?mobile=unL9HuS
+  foreign-disasters: /information/foreign-disasters/?mobile=unL9HuS
+  fact-sheets: /information/fact-sheets/?mobile=unL9HuS
+
+  ESinformation: /es/información/?mobile=unL9HuS
+  ESnews-feeds: /es/información/canales-de-noticias/?mobile=unL9HuS
+  ESimmediate-needs: /es/información/necesidades-inmediatas/?mobile=unL9HuS
+  ESmoving-forward: /es/información/próximo-paso/?mobile=unL9HuS
+  ESdisabilities: /es/información/discapacidades-o-necesidades-funcionales-y-de-acceso/?mobile=unL9HuS
+  ESolder-americans: /es/información/adultos-mayores-estadounidenses/?mobile=unL9HuS
+  ESchildren-and-families: /es/información/niños-y-familias/?mobile=unL9HuS
+  ESdisaster-types: /es/información/los-recursos-del-desastre/?mobile=unL9HuS 
+  ESforeign-disasters: /es/información/desastres-en-el-extranjero/?mobile=unL9HuS
+  ESfact-sheets: /es/información/hojas-de-datos/?mobile=unL9HuS
+
+  about-us: /about-us/?mobile=unL9HuS
+  overview: /about-us/overview/?mobile=unL9HuS
+  partners: /about-us/partners/?mobile=unL9HuS
+
+  ESabout-us: /es/acerca-de/?mobile=unL9HuS
+  ESoverview: /es/acerca-de/descripción-general/?mobile=unL9HuS
+  ESpartners: /es/acerca-de/socios/?mobile=unL9HuS
+
+  help: /help/?mobile=unL9HuS
+  faqs: /help/faqs/?mobile=unL9HuS
+  contact-us: /help/contact-us/?mobile=unL9HuS
+  privacy-policy: /help/privacy-policy/?mobile=unL9HuS
+  accessibility: /help/accessibility/?mobile=unL9HuS
+  download-plug-ins: /help/download-plug-ins/?mobile=unL9HuS
+  
+  EShelp: /es/ayuda/?mobile=unL9HuS
+  ESfaqs: /es/node/14930/?mobile=unL9HuS
+  EScontact-us: /es/ayuda/contáctenos/?mobile=unL9HuS
+  ESprivacy-policy: /es/ayuda/política-de-privacidad/?mobile=unL9HuS
+  ESaccessibility: /es/ayuda/accesibilidad/?mobile=unL9HuS
+  ESdownload-plug-ins: /es/ayuda/descargar-plug-ins/?mobile=unL9HuS
+
+  FOA4629: /get-assistance/forms-of-assistance/4629
+
+# (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  - 1280
+
+# (optional) JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# (required) The directory that your screenshots will be stored in
+directory: 'shots'
+
+# (required) Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# (optional) The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# (optional) Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# (optional) Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_only
