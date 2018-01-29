@@ -17,8 +17,8 @@ browser: "casperjs"
 
 # (required) The domains to take screenshots of.
 domains:
-  current:  "https://testint.disasterassistance.gov/"
-  new:      "https://staging.disasterassistance.gov/"
+  staging:  "https://staging.disasterassistance.gov"
+  prod:  "http://www.disasterassistance.gov"
 
 # (required) The paths to capture. All paths should exist for both of the domains specified above.
 paths:
@@ -89,8 +89,6 @@ paths:
   ESprivacy-policy: /es/ayuda/política-de-privacidad/?mobile=unL9HuS
   ESaccessibility: /es/ayuda/accesibilidad/?mobile=unL9HuS
   ESdownload-plug-ins: /es/ayuda/descargar-plug-ins/?mobile=unL9HuS
-
-  FOA4629: /get-assistance/forms-of-assistance/4629
 
 # (required) Screen widths (and optional height) to resize the browser to before taking the screenshot.
 screen_widths:

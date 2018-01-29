@@ -1,0 +1,195 @@
+##############################################################
+##############################################################
+# This particular config is intended to demonstrate how
+# to use Wraith in 'capture' mode, which is best suited to
+# comparing a test and live version of the same website.
+#
+# `wraith capture capture.yaml`
+#
+##############################################################
+##############################################################
+
+#The engine to run Wraith with. Examples: 'phantomjs', 'casperjs', 'slimerjs'
+browser: "casperjs"
+
+# The domains to take screenshots of.
+domains:
+  staging:  "https://staging.disasterassistance.gov"
+  prod:  "http://www.disasterassistance.gov"
+
+# The paths to capture. All paths should exist for both of the domains specified above.
+paths:
+
+  foa4450: /get-assistance/forms-of-assistance/4450/?mobile=unL9HuS
+  foa4451: /get-assistance/forms-of-assistance/4451/?mobile=unL9HuS
+  foa4452: /get-assistance/forms-of-assistance/4452/?mobile=unL9HuS
+  foa4453: /get-assistance/forms-of-assistance/4453/?mobile=unL9HuS
+  foa4454: /get-assistance/forms-of-assistance/4454/?mobile=unL9HuS
+  foa4457: /get-assistance/forms-of-assistance/4457/?mobile=unL9HuS
+  foa4459: /get-assistance/forms-of-assistance/4459/?mobile=unL9HuS
+  foa4460: /get-assistance/forms-of-assistance/4460/?mobile=unL9HuS
+  foa4461: /get-assistance/forms-of-assistance/4461/?mobile=unL9HuS
+  foa4464: /get-assistance/forms-of-assistance/4464/?mobile=unL9HuS
+  foa4465: /get-assistance/forms-of-assistance/4465/?mobile=unL9HuS
+  foa4466: /get-assistance/forms-of-assistance/4466/?mobile=unL9HuS
+  foa4467: /get-assistance/forms-of-assistance/4467/?mobile=unL9HuS
+  foa4468: /get-assistance/forms-of-assistance/4468/?mobile=unL9HuS
+  foa4469: /get-assistance/forms-of-assistance/4469/?mobile=unL9HuS
+  foa4470: /get-assistance/forms-of-assistance/4470/?mobile=unL9HuS
+  foa4471: /get-assistance/forms-of-assistance/4471/?mobile=unL9HuS
+  foa4473: /get-assistance/forms-of-assistance/4473/?mobile=unL9HuS
+  foa4474: /get-assistance/forms-of-assistance/4474/?mobile=unL9HuS
+  foa4476: /get-assistance/forms-of-assistance/4476/?mobile=unL9HuS
+  foa4477: /get-assistance/forms-of-assistance/4477/?mobile=unL9HuS
+  foa4479: /get-assistance/forms-of-assistance/4479/?mobile=unL9HuS
+  foa4480: /get-assistance/forms-of-assistance/4480/?mobile=unL9HuS
+  foa4481: /get-assistance/forms-of-assistance/4481/?mobile=unL9HuS
+  foa4482: /get-assistance/forms-of-assistance/4482/?mobile=unL9HuS
+  foa4483: /get-assistance/forms-of-assistance/4483/?mobile=unL9HuS
+  foa4484: /get-assistance/forms-of-assistance/4484/?mobile=unL9HuS
+  foa4485: /get-assistance/forms-of-assistance/4485/?mobile=unL9HuS
+  foa4486: /get-assistance/forms-of-assistance/4486/?mobile=unL9HuS
+  for4487: /get-assistance/forms-of-assistance/4487/?mobile=unL9HuS
+  foa4488: /get-assistance/forms-of-assistance/4488/?mobile=unL9HuS
+  foa4489: /get-assistance/forms-of-assistance/4489/?mobile=unL9HuS
+  foa4490: /get-assistance/forms-of-assistance/4490/?mobile=unL9HuS
+  foa4491: /get-assistance/forms-of-assistance/4491/?mobile=unL9HuS
+  foa4492: /get-assistance/forms-of-assistance/4492/?mobile=unL9HuS
+  foa4493: /get-assistance/forms-of-assistance/4493/?mobile=unL9HuS
+  foa4494: /get-assistance/forms-of-assistance/4494/?mobile=unL9HuS
+  foa4495: /get-assistance/forms-of-assistance/4495/?mobile=unL9HuS
+  foa4496: /get-assistance/forms-of-assistance/4496/?mobile=unL9HuS
+  foa4497: /get-assistance/forms-of-assistance/4497/?mobile=unL9HuS
+  foa4498: /get-assistance/forms-of-assistance/4498/?mobile=unL9HuS
+  foa4499: /get-assistance/forms-of-assistance/4499/?mobile=unL9HuS
+  foa4500: /get-assistance/forms-of-assistance/4500/?mobile=unL9HuS
+  foa4502: /get-assistance/forms-of-assistance/4502/?mobile=unL9HuS
+  foa4503: /get-assistance/forms-of-assistance/4503/?mobile=unL9HuS
+  foa4505: /get-assistance/forms-of-assistance/4505/?mobile=unL9HuS
+  foa4506: /get-assistance/forms-of-assistance/4506/?mobile=unL9HuS
+  foa4509: /get-assistance/forms-of-assistance/4509/?mobile=unL9HuS
+  foa4510: /get-assistance/forms-of-assistance/4510/?mobile=unL9HuS
+  foa4526: /get-assistance/forms-of-assistance/4626/?mobile=unL9HuS
+  foa4527: /get-assistance/forms-of-assistance/4627/?mobile=unL9HuS
+  foa4628: /get-assistance/forms-of-assistance/4628/?mobile=unL9HuS
+  foa4629: /get-assistance/forms-of-assistance/4629/?mobile=unL9HuS
+  foa4630: /get-assistance/forms-of-assistance/4630/?mobile=unL9HuS
+  foa4698: /get-assistance/forms-of-assistance/4698/?mobile=unL9HuS
+  foa4700: /get-assistance/forms-of-assistance/4700/?mobile=unL9HuS
+  foa4703: /get-assistance/forms-of-assistance/4703/?mobile=unL9HuS
+  foa4707: /get-assistance/forms-of-assistance/4707/?mobile=unL9HuS
+  foa4709: /get-assistance/forms-of-assistance/4709/?mobile=unL9HuS
+  foa4711: /get-assistance/forms-of-assistance/4711/?mobile=unL9HuS
+  foa4713: /get-assistance/forms-of-assistance/4713/?mobile=unL9HuS
+  foa4715: /get-assistance/forms-of-assistance/4715/?mobile=unL9HuS
+  foa4717: /get-assistance/forms-of-assistance/4717/?mobile=unL9HuS
+  foa4719: /get-assistance/forms-of-assistance/4719/?mobile=unL9HuS
+  foa4721: /get-assistance/forms-of-assistance/4721/?mobile=unL9HuS
+  foa4723: /get-assistance/forms-of-assistance/4723/?mobile=unL9HuS
+  foa4725: /get-assistance/forms-of-assistance/4725/?mobile=unL9HuS
+  foa5769: /get-assistance/forms-of-assistance/5769/?mobile=unL9HuS
+  foa5778: /get-assistance/forms-of-assistance/5778/?mobile=unL9HuS
+  foa5779: /get-assistance/forms-of-assistance/5779/?mobile=unL9HuS
+  foa5780: /get-assistance/forms-of-assistance/5780/?mobile=unL9HuS
+
+  ESfoa4450: /es/obtener-asistencia/forma-de-asistencia/4450/?mobile=unL9HuS
+  ESfoa4451: /es/obtener-asistencia/forma-de-asistencia/4451/?mobile=unL9HuS
+  ESfoa4452: /es/obtener-asistencia/forma-de-asistencia/4452/?mobile=unL9HuS
+  ESfoa4453: /es/obtener-asistencia/forma-de-asistencia/4453/?mobile=unL9HuS
+  ESfoa4454: /es/obtener-asistencia/forma-de-asistencia/4454/?mobile=unL9HuS
+  ESfoa4457: /es/obtener-asistencia/forma-de-asistencia/4457/?mobile=unL9HuS
+  ESfoa4459: /es/obtener-asistencia/forma-de-asistencia/4459/?mobile=unL9HuS
+  ESfoa4460: /es/obtener-asistencia/forma-de-asistencia/4460/?mobile=unL9HuS
+  ESfoa4461: /es/obtener-asistencia/forma-de-asistencia/4461/?mobile=unL9HuS
+  ESfoa4464: /es/obtener-asistencia/forma-de-asistencia/4464/?mobile=unL9HuS
+  ESfoa4465: /es/obtener-asistencia/forma-de-asistencia/4465/?mobile=unL9HuS
+  ESfoa4466: /es/obtener-asistencia/forma-de-asistencia/4466/?mobile=unL9HuS
+  ESfoa4467: /es/obtener-asistencia/forma-de-asistencia/4467/?mobile=unL9HuS
+  ESfoa4468: /es/obtener-asistencia/forma-de-asistencia/4468/?mobile=unL9HuS
+  ESfoa4469: /es/obtener-asistencia/forma-de-asistencia/4469/?mobile=unL9HuS
+  ESfoa4470: /es/obtener-asistencia/forma-de-asistencia/4470/?mobile=unL9HuS
+  ESfoa4471: /es/obtener-asistencia/forma-de-asistencia/4471/?mobile=unL9HuS
+  ESfoa4473: /es/obtener-asistencia/forma-de-asistencia/4473/?mobile=unL9HuS
+  ESfoa4474: /es/obtener-asistencia/forma-de-asistencia/4474/?mobile=unL9HuS
+  ESfoa4476: /es/obtener-asistencia/forma-de-asistencia/4476/?mobile=unL9HuS
+  ESfoa4477: /es/obtener-asistencia/forma-de-asistencia/4477/?mobile=unL9HuS
+  ESfoa4479: /es/obtener-asistencia/forma-de-asistencia/4479/?mobile=unL9HuS
+  ESfoa4480: /es/obtener-asistencia/forma-de-asistencia/4480/?mobile=unL9HuS
+  ESfoa4481: /es/obtener-asistencia/forma-de-asistencia/4481/?mobile=unL9HuS
+  ESfoa4482: /es/obtener-asistencia/forma-de-asistencia/4482/?mobile=unL9HuS
+  ESfoa4483: /es/obtener-asistencia/forma-de-asistencia/4483/?mobile=unL9HuS
+  ESfoa4484: /es/obtener-asistencia/forma-de-asistencia/4484/?mobile=unL9HuS
+  ESfoa4485: /es/obtener-asistencia/forma-de-asistencia/4485/?mobile=unL9HuS
+  ESfoa4486: /es/obtener-asistencia/forma-de-asistencia/4486/?mobile=unL9HuS
+  ESfoa4487: /es/obtener-asistencia/forma-de-asistencia/4487/?mobile=unL9HuS
+  ESfoa4488: /es/obtener-asistencia/forma-de-asistencia/4488/?mobile=unL9HuS
+  ESfoa4489: /es/obtener-asistencia/forma-de-asistencia/4489/?mobile=unL9HuS
+  ESfoa4490: /es/obtener-asistencia/forma-de-asistencia/4490/?mobile=unL9HuS
+  ESfoa4491: /es/obtener-asistencia/forma-de-asistencia/4491/?mobile=unL9HuS
+  ESfoa4492: /es/obtener-asistencia/forma-de-asistencia/4492/?mobile=unL9HuS
+  ESfoa4493: /es/obtener-asistencia/forma-de-asistencia/4493/?mobile=unL9HuS
+  ESfoa4494: /es/obtener-asistencia/forma-de-asistencia/4494/?mobile=unL9HuS
+  ESfoa4495: /es/obtener-asistencia/forma-de-asistencia/4495/?mobile=unL9HuS
+  ESfoa4496: /es/obtener-asistencia/forma-de-asistencia/4496/?mobile=unL9HuS
+  ESfoa4497: /es/obtener-asistencia/forma-de-asistencia/4497/?mobile=unL9HuS
+  ESfoa4498: /es/obtener-asistencia/forma-de-asistencia/4498/?mobile=unL9HuS
+  ESfoa4499: /es/obtener-asistencia/forma-de-asistencia/4499/?mobile=unL9HuS
+  ESfoa4500: /es/obtener-asistencia/forma-de-asistencia/4500/?mobile=unL9HuS
+  ESfoa4502: /es/obtener-asistencia/forma-de-asistencia/4502/?mobile=unL9HuS
+  ESfoa4503: /es/obtener-asistencia/forma-de-asistencia/4503/?mobile=unL9HuS
+  ESfoa4505: /es/obtener-asistencia/forma-de-asistencia/4505/?mobile=unL9HuS
+  ESfoa4506: /es/obtener-asistencia/forma-de-asistencia/4506/?mobile=unL9HuS
+  ESfoa4509: /es/obtener-asistencia/forma-de-asistencia/4509/?mobile=unL9HuS
+  ESfoa4510: /es/obtener-asistencia/forma-de-asistencia/4510/?mobile=unL9HuS
+  ESfoa4626: /es/obtener-asistencia/forma-de-asistencia/4626/?mobile=unL9HuS
+  ESfoa4627: /es/obtener-asistencia/forma-de-asistencia/4627/?mobile=unL9HuS
+  ESfoa4628: /es/obtener-asistencia/forma-de-asistencia/4628/?mobile=unL9HuS
+  ESfoa4629: /es/obtener-asistencia/forma-de-asistencia/4629/?mobile=unL9HuS
+  ESfoa4630: /es/obtener-asistencia/forma-de-asistencia/4630/?mobile=unL9HuS
+  ESfoa4698: /es/obtener-asistencia/forma-de-asistencia/4698/?mobile=unL9HuS
+  ESfoa4700: /es/obtener-asistencia/forma-de-asistencia/4700/?mobile=unL9HuS
+  ESfoa4703: /es/obtener-asistencia/forma-de-asistencia/4703/?mobile=unL9HuS
+  ESfoa4707: /es/obtener-asistencia/forma-de-asistencia/4707/?mobile=unL9HuS
+  ESfoa4709: /es/obtener-asistencia/forma-de-asistencia/4709/?mobile=unL9HuS
+  ESfoa4711: /es/obtener-asistencia/forma-de-asistencia/4711/?mobile=unL9HuS
+  ESfoa4713: /es/obtener-asistencia/forma-de-asistencia/4713/?mobile=unL9HuS
+  ESfoa4715: /es/obtener-asistencia/forma-de-asistencia/4715/?mobile=unL9HuS
+  ESfoa4717: /es/obtener-asistencia/forma-de-asistencia/4717/?mobile=unL9HuS
+  ESfoa4719: /es/obtener-asistencia/forma-de-asistencia/4719/?mobile=unL9HuS
+  ESfoa4721: /es/obtener-asistencia/forma-de-asistencia/4721/?mobile=unL9HuS
+  ESfoa4723: /es/obtener-asistencia/forma-de-asistencia/4723/?mobile=unL9HuS
+  ESfoa4725: /es/obtener-asistencia/forma-de-asistencia/4725/?mobile=unL9HuS
+  ESfoa5769: /es/obtener-asistencia/forma-de-asistencia/5769/?mobile=unL9HuS
+  ESfoa5778: /es/obtener-asistencia/forma-de-asistencia/5778/?mobile=unL9HuS
+  ESfoa5779: /es/obtener-asistencia/forma-de-asistencia/5779/?mobile=unL9HuS
+  ESfoa5780: /es/obtener-asistencia/forma-de-asistencia/5780/?mobile=unL9HuS
+
+# Screen widths (and optional height) to resize the browser to before taking the screenshot.
+screen_widths:
+  - 1280
+
+# JavaScript file to execute before taking screenshot of every path. Default: nil
+before_capture: 'javascript/wait--casper.js'
+
+# The directory that your screenshots will be stored in
+directory: 'FOAshots'
+
+# Amount of fuzz ImageMagick will use when comparing images. A higher fuzz makes the comparison less strict.
+fuzz: '20%'
+
+# The maximum acceptable level of difference (in %) between two images before Wraith reports a failure. Default: 0
+threshold: 5
+
+# Specify the template (and generated thumbnail sizes) for the gallery output.
+gallery:
+  template: 'slideshow_template' # Examples: 'basic_template' (default), 'slideshow_template'
+  thumb_width:  200
+  thumb_height: 200
+
+# Choose which results are displayed in the gallery, and in what order. Default: alphanumeric
+# Options:
+#   alphanumeric - all paths (with or without a difference) are shown, sorted by path
+#   diffs_first - all paths (with or without a difference) are shown, sorted by difference size (largest first)
+#   diffs_only - only paths with a difference are shown, sorted by difference size (largest first)
+# Note: different screen widths are always grouped together.
+mode: diffs_only
